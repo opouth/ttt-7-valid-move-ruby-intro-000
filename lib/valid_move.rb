@@ -1,4 +1,4 @@
-ttt_board = ["","X"," "," "," "," "," "," "," "]
+board = ["","X"," "," "," "," "," "," "," "]
 puts "Enter a position on the board 1-9:"
 user_input = gets.chomp
 number_entered = user_input.to_i - 1
@@ -17,4 +17,4 @@ def position_taken?(board, index)
 end
 
 
-valid_move?(number_entered, ttt_board)
+valid_move?(number_entered, board)
