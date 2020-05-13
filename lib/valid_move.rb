@@ -18,4 +18,4 @@ def position_taken?(board, index)
 end
 =end
 
-valid_move?(number_entered, board)
+valid_move?(index, board)
