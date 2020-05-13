@@ -22,5 +22,5 @@ def position_taken?(board, index)
     return true
    end
 end
-
+end
 valid_move?(index, board)
