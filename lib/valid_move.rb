@@ -4,7 +4,7 @@ user_input = gets.chomp
 index = user_input.to_i - 1
 
 def valid_move?(index, board)
-  number_entered.between?(0, 8) && !(position_taken?(board, index))
+  index.between?(0, 8) && !(position_taken?(board, index))
 end
 
 =begin
