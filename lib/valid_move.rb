@@ -7,6 +7,7 @@ def valid_move?(number_entered, board)
   number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
 
+=begin
 def position_taken?(board, index)
   #taken = nil
   if (board[index] ==  " " || board[index] == "" || board[index] == nil)
@@ -15,6 +16,6 @@ def position_taken?(board, index)
     return true
    end
 end
-
+=end
 
 valid_move?(number_entered, board)
