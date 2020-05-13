@@ -4,8 +4,8 @@ puts "Pls choose a position between 1 & 9"
 choice = gets.chomp
 choosen_num = choice.to_i - 1
 
-def valid_move?(board, index)
-  choosen_num.between?(1, 9) && !(position_taken(board, choosen_num))
+def valid_move?(number_entered, board)
+  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
