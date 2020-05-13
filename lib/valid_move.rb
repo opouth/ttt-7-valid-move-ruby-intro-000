@@ -1,15 +1,11 @@
 # code your #valid_move? method here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts "Pls choose a position between 1 & 9"
+choosen_num = gets.strip
 
 def valid_move?(board, index)
-  if index <= 0 || index >= 9
-    return true
-  elsif index != board[index]
-    return false
-  else
-    return false
-  end
-
+  choosen_num.between?(1, 9) && choosen_num != position_taken(board, choosen_num)
+  return true 
 end
 
 
