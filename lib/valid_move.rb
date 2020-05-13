@@ -8,7 +8,13 @@ def valid_move?(number_entered, board)
 end
 
 def position_taken?(board, index)
- !(board[index] == " " || board[index] == "" || board[index] == nil)
+  #taken = nil
+  if (board[index] ==  " " || board[index] == "" || board[index] == nil)
+    return false
+  else
+    return true
+   end
 end
+
 
 valid_move?(number_entered, ttt_board)
