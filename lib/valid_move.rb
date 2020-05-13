@@ -1,4 +1,4 @@
-board = ["","X"," "," "," "," "," "," "," "]
+board = [" "," "," "," "," "," "," "," "," "]
 puts "Enter a position on the board 1-9:"
 user_input = gets.chomp
 number_entered = user_input.to_i - 1
