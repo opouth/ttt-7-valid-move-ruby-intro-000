@@ -1,7 +1,8 @@
 # code your #valid_move? method here
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Pls choose a position between 1 & 9"
-choosen_num = gets.chomp.to_i
+choice = gets.chomp
+choosen_num = choice.to_i - 1
 
 def valid_move?(board, index)
   choosen_num.between?(1, 9) && !(position_taken(board, choosen_num))
