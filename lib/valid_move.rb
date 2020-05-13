@@ -1,4 +1,7 @@
 # code your #valid_move? method here
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+puts board.size
+
 def valid_move?(board, index)
 
 end
